@@ -19,7 +19,7 @@
 -- Table structure for table `activity`
 --
 
-SET @@session.sql_mode ='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION';
+SET @@session.sql_mode ='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 DROP TABLE IF EXISTS `activity`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -216,7 +216,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `schedule`
 --
-alter table schedule AUTO_INCREMENT=1;
 DROP TABLE IF EXISTS `schedule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -244,7 +243,6 @@ UNLOCK TABLES;
 --
 -- Table structure for table `RefundPolicy`
 --
-alter table RefundPolicy AUTO_INCREMENT=1;
 DROP TABLE IF EXISTS `RefundPolicy`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

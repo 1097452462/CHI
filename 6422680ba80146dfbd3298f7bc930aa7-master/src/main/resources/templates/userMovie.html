@@ -23,20 +23,30 @@
 </head>
 <body>
     <div class="nav-top-container">
-        <div class="nav-logo title">NJU-Se电影购票系统</div>
-        <ul class="nav nav-pills">
-            <li role="presentation"><a href="/user/home">首页</a></li>
-            <li role="presentation" class="active"><a href="#">电影</a></li>
+        <div class="nav-logo title" style="position: absolute; top:16px; left: 10%; color: #1c74af">
+            NJU-SE电影购票系统
+        </div>
+        <ul class="nav nav-pills" style="position: absolute; top:18px;left:45%;">
+            <li role="presentation" style="color: #1c74af"><a href="/user/home" style="color: #1c74af">首页</a></li>
+            <li role="presentation" class="active" style="color: #1c74af"><a href="#">电影</a></li>
         </ul>
-        <div class="btn-group">
-            <button class="nav-user-container btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+        <div class="input-group" style="width: 300px;position: absolute;right: 21.5%;top: 22px;">
+            <input type="text" class="form-control" id="search-input" placeholder="请输入关键字">
+            <span class="input-group-btn">
+                    <button class="btn btn-default" id="search-btn" type="button">搜索</button>
+                </span>
+        </div>
+
+        <div class="btn-group" style="position:absolute; top:18px;right:10%;">
+            <button class="nav-user-container btn dropdown-toggle" style="vertical-align: 75%" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="avatar-sm" src="/images/defaultAvatar.jpg" />
-                <span class="gray-text" style="vertical-align: middle" id="user-name"> &nbsp;<span class="caret"></span></span>
+                <span class="gray-text" style="vertical-align: center;" id="user-name">&nbsp;<span class="caret"></span></span>
             </button>
             <ul class="dropdown-menu">
                 <li><a href="/user/buy">电影票</a></li>
                 <li><a href="/user/member">卡包</a></li>
-                <li><a href ="/user/cost">充值/消费记录</a></li>
+                <li><a href="/user/cost">充值/消费记录</a></li>
                 <li><a href="/user/info">个人信息</a></li>
                 <li id="logout"><a href="#">登出</a></li>
             </ul>
@@ -44,12 +54,6 @@
     </div>
     <div class="content-container">
         <div class="filler-container card">
-            <div class="input-group" style="width: 800px">
-                <input type="text" class="form-control" id="search-input" placeholder="请输入关键字">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" id="search-btn" type="button">搜索</button>
-                </span>
-            </div>
             <!--<ul class="filler-item" style="display: flex">-->
                 <!--<span>类型：</span>-->
                 <!--<li><a class="active">全部</a></li>-->
